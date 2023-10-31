@@ -16,4 +16,9 @@ void Man::Go()
 			break;
 		}
 	}
+
+	chess->ChessDown(&pos, CHESS_BLACK);
+	if (chess->CheckWin()) {
+		MessageBox(NULL, TEXT("Man Win!"), TEXT("Hint"), 0);
+	}
 }

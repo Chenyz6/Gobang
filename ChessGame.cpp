@@ -24,6 +24,6 @@ ChessGame::ChessGame(AI* ai, Chess* chess, Man* man)
 	this->chess = chess;
 	this->man = man;
 
-	//ai->Init(chess);
+	ai->Init(chess);
 	man->Init(chess);
 }
